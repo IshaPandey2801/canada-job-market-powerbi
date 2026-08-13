@@ -1,4 +1,4 @@
-## Canada Job Market Analysis — Power BI
+### Canada Job Market Analysis — Power BI
 # Project Overview
 An interactive Power BI dashboard developed to analyze Canadian job postings and identify trends across job locations, sectors, experience levels, employment types, companies, and application activity.
 The project demonstrates an end-to-end data analytics workflow including data cleaning, data modeling, DAX calculations, interactive visualization, and business insight generation.
