@@ -25,15 +25,15 @@ The project demonstrates an end-to-end data analytics workflow including data cl
 
 The dataset contains Canadian job-posting information including:
 
-Job title
-Company
-City
-Province
-Employment type
-Experience level
-Sector
-Published date
-Application count
+1) Job title
+2) Company
+3) City
+4) Province
+5) Employment type
+6) Experience level
+7) Sector
+8) Published date
+9) Application count
 
 # Dataset link:-
 https://www.kaggle.com/datasets/kanchana1990/linkedin-canada-data-science-jobs-2024
@@ -54,35 +54,39 @@ Major transformations included:
 The project uses a star-schema model.
 
 Fact Table
+
 Fact_Jobs
 
 Contains job-level transactional information such as:
 
-Job ID
-Company
-Job title
-Published date
-Application count
-Location
-Employment type
-Experience level
+1) Job ID
+2) Company
+3) Job title
+4) Published date
+5) Application count
+6) Location
+7) Employment type
+8) Experience level
 
 # Dimension Tables
-Dim_Date
-Dim_Location
-Dim_Company
-Dim_Employment
-Dim_Experience
-Dim_Sector
+1) Dim_Date
+2) Dim_Location
+3) Dim_Company
+4) Dim_Employment
+5) Dim_Experience
+6) Dim_Sector
 
 # Key DAX Measures
 
 Examples of measures created:
 
 Total Jobs = COUNTROWS(Fact_Jobs)
+
 Total Companies = DISTINCTCOUNT(Fact_Jobs[companyId])
+
 Average Applications =
 AVERAGE(Fact_Jobs[Application Count])
+
 Maximum Applications =
 MAX(Fact_Jobs[Application Count])
 
@@ -94,72 +98,75 @@ Additional measures were created for analyzing cities, provinces, applications, 
 
 Provides a high-level overview of the dataset including:
 
-Total jobs
-Total companies
-Total cities
-Total provinces
-Average applications
-Maximum applications
-Sector distribution
-Experience-level distribution
-Employment-type distribution
-Top cities
+1) Total jobs
+2) Total companies
+3) Total cities
+4) Total provinces
+5) Average applications
+6) Maximum applications
+7) Sector distribution
+8) Experience-level distribution
+9) Employment-type distribution
+10) Top cities
 
 # 2. Detailed Analysis
 
 Provides interactive filtering and detailed job-level analysis using:
 
-Province slicer
-City slicer
-Sector slicer
-Experience-level slicer
-Employment-type slicer
-Jobs posted over time
-Jobs by province
-Top companies
-Detailed job table
+1) Province slicer
+2) City slicer
+3) Sector slicer
+4) Experience-level slicer
+5) Employment-type slicer
+6) Jobs posted over time
+7) Jobs by province
+8) Top companies
+9) Detailed job table
 
 # 3. Job Insights
 
 Provides deeper analysis of:
 
-Jobs by employment type
-Jobs by sector
-Jobs by experience level
-Average applications by experience level
-Top 10 cities by jobs
-Average applications
-Maximum applications
+1) Jobs by employment type
+2) Jobs by sector
+3) Jobs by experience level
+4) Average applications by experience level
+5) Top 10 cities by jobs
+6) Average applications
+7) Maximum applications
 
 # Key Insights
 
 Based on the analyzed dataset:
 
-Toronto has the highest number of job postings among the cities analyzed.
-Mid-Senior level positions represent the largest experience category.
-Full-time positions dominate the employment-type distribution.
-Technology and software-related sectors contribute a significant share of job postings.
-The dataset contains 340 job postings and approximately 38,423 applications.
-The average job receives approximately 113 applications, indicating substantial competition.
+1) Toronto has the highest number of job postings among the cities analyzed.
+2) Mid-Senior level positions represent the largest experience category.
+3) Full-time positions dominate the employment-type distribution.
+4) Technology and software-related sectors contribute a significant share of job postings.
+5) The dataset contains 340 job postings and approximately 38,423 applications.
+6) The average job receives approximately 113 applications, indicating substantial competition.
 
 # Dashboard Preview
 Executive Summary
+
 Detailed Analysis
+
 Job Insights
 
 # Skills Demonstrated
-Data Cleaning
-Power Query
-DAX
-Data Modeling
-Star Schema
-Data Visualization
-KPI Development
-Interactive Dashboard Design
-Business Analysis
-Data Storytelling
+1) Data Cleaning
+2) Power Query
+3) DAX
+4) Data Modeling
+5) Star Schema
+6) Data Visualization
+7) KPI Development
+8) Interactive Dashboard Design
+9) Business Analysis
+10) Data Storytelling
 
 # Author
 
 Shreya Pandey
+
 Data Analyst | Power BI | SQL | Python
